@@ -4,388 +4,438 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaket Olahraga Anti UV Premium</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://cdn.orderonline.id/uploads/images_1142461757023397337.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lavender': {
+                            light: '#E6E6FA',
+                            DEFAULT: '#D8BFD8',
+                            dark: '#9370DB'
+                        },
+                        'accent': {
+                            purple: '#8A2BE2',
+                            soft: '#F5F3FF'
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'Montserrat', 'sans-serif'],
+                        'body': ['Lato', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
             font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
         }
-        .hero-image {
-            transition: transform 0.3s ease;
+        .gradient-overlay {
+            background: linear-gradient(to bottom, rgba(214, 191, 216, 0.7), rgba(147, 112, 219, 0.8));
         }
-        .hero-image:hover {
-            transform: scale(1.02);
-        }
-        .product-image {
-            transition: transform 0.3s ease;
-        }
-        .product-image:hover {
-            transform: scale(1.05);
-        }
-        .color-option {
-            transition: transform 0.2s ease;
-        }
-        .color-option:hover {
-            transform: scale(1.1);
-        }
-        .promo-banner {
-            background: linear-gradient(135deg, #9370DB 0%, #4B0082 100%);
+        .promo-badge {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            transform: rotate(-5deg);
         }
         .testimonial-card {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .form-container {
-            background-color: rgba(230, 230, 250, 0.2);
-            backdrop-filter: blur(5px);
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .color-swatch {
+            transition: all 0.2s ease;
+        }
+        .color-swatch:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-accent-soft text-gray-800">
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 py-8">
-        <div class="flex flex-col items-center">
-            <img src="https://cdn.orderonline.id/uploads/images_9000491756508567485.png" alt="Jaket Olahraga Anti UV" class="hero-image w-full max-w-3xl rounded-lg shadow-xl">
-        </div>
-    </section>
-
-    <!-- Product Title & Description -->
-    <section class="container mx-auto px-4 py-8" data-aos="fade-up">
-        <div class="max-w-3xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Jaket Olahraga Anti UV</h1>
-            <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-                Lindungi kulitmu dari sinar matahari saat beraktivitas! 🌞 Jaket Olahraga Anti UV ini dirancang dengan bahan ringan, adem, dan cepat kering, membuatmu tetap nyaman saat berolahraga, jogging, bersepeda, atau aktivitas outdoor lainnya.
-            </p>
-        </div>
-    </section>
-
-    <!-- Product Features -->
-    <section class="bg-white py-12" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-8">Keunggulan Produk</h2>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 text-purple-600">
-                            <i data-feather="check-circle" class="w-6 h-6"></i>
-                        </div>
-                        <p class="ml-3 text-lg">Anti UV Protection – melindungi kulit dari paparan sinar matahari</p>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 text-purple-600">
-                            <i data-feather="check-circle" class="w-6 h-6"></i>
-                        </div>
-                        <p class="ml-3 text-lg">Bahan Premium – lembut, ringan, dan breathable</p>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="flex-shrink-0 text-purple-600">
-                            <i data-feather="check-circle" class="w-6 h-6"></i>
-                        </div>
-                        <p class="ml-3 text-lg">Desain Stylish – cocok dipakai wanita</p>
-                    </li>
-                </ul>
+    <section class="relative w-full h-screen max-h-[80vh] overflow-hidden">
+        <img src="https://cdn.orderonline.id/uploads/images_9000491756508567485.png" alt="Jaket Olahraga Anti UV" class="w-full h-full object-cover">
+        <div class="absolute inset-0 gradient-overlay flex items-center justify-center">
+            <div class="text-center text-white px-4" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Jaket Olahraga Anti UV</h1>
+                <p class="text-xl md:text-2xl max-w-2xl mx-auto">Lindungi kulitmu dari sinar matahari saat beraktivitas! 🌞 Jaket Olahraga Anti UV ini dirancang dengan bahan ringan, adem, dan cepat kering, membuatmu tetap nyaman saat berolahraga, jogging, bersepeda, atau aktivitas outdoor lainnya.</p>
             </div>
         </div>
     </section>
 
-    <!-- Product Gallery -->
-    <section class="py-12 bg-gray-50" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Detail Produk</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://cdn.orderonline.id/uploads/images_7720661756508568915.png" alt="Detail Jaket 1" class="product-image w-full h-auto rounded">
-                    <p class="mt-4 text-gray-600">Desain ergonomis untuk kenyamanan maksimal</p>
+    <!-- Features Section -->
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-lavender-dark">Keunggulan Produk</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-lavender-light shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-lavender-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="sun" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Anti UV Protection</h3>
+                    <p>Melindungi kulit dari paparan sinar matahari yang berbahaya.</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://cdn.orderonline.id/uploads/images_2142511756508567273.png" alt="Detail Jaket 2" class="product-image w-full h-auto rounded">
-                    <p class="mt-4 text-gray-600">Bahan berkualitas tinggi dengan jahitan presisi</p>
+                <div class="text-center p-6 rounded-lg bg-lavender-light shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-lavender-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="feather" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Bahan Premium</h3>
+                    <p>Lembut, ringan, dan breathable untuk kenyamanan maksimal.</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://cdn.orderonline.id/uploads/images_7454791756508567804.png" alt="Detail Jaket 3" class="product-image w-full h-auto rounded">
-                    <p class="mt-4 text-gray-600">Saku fungsional untuk menyimpan barang kecil</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="https://cdn.orderonline.id/uploads/images_3300071756508568078.png" alt="Detail Jaket 4" class="product-image w-full h-auto rounded">
-                    <p class="mt-4 text-gray-600">Tampilan stylish dari berbagai angle</p>
+                <div class="text-center p-6 rounded-lg bg-lavender-light shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-lavender-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="star" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Desain Stylish</h3>
+                    <p>Cocok dipakai wanita dengan tampilan yang modern dan elegan.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Color Options -->
-    <section class="py-12 bg-white" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Varian Warna Tersedia</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-black mb-2"></div>
-                    <span class="text-sm">HITAM</span>
+    <!-- Product Details -->
+    <section class="py-16 px-4 md:px-8 bg-accent-soft">
+        <div class="max-w-6xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-lavender-dark">Detail Produk</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.orderonline.id/uploads/images_7720661756508568915.png" alt="Detail Jaket Tampak Depan" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-center">Tampilan depan jaket dengan desain modern</p>
+                    </div>
                 </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-gray-500 mb-2"></div>
-                    <span class="text-sm">GRAY</span>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.orderonline.id/uploads/images_2142511756508567273.png" alt="Detail Jaket Tampak Belakang" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-center">Tampilan belakang jaket yang stylish</p>
+                    </div>
                 </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-green-500 mb-2"></div>
-                    <span class="text-sm">HIJAU</span>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.orderonline.id/uploads/images_7454791756508567804.png" alt="Bahan Jaket Berkualitas" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-center">Bahan premium yang nyaman dan breathable</p>
+                    </div>
                 </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-red-500 mb-2"></div>
-                    <span class="text-sm">MERAH</span>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.orderonline.id/uploads/images_3300071756508568078.png" alt="Jaket dalam Aktivitas" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-center">Sempurna untuk berbagai aktivitas outdoor</p>
+                    </div>
                 </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-white border border-gray-200 mb-2"></div>
-                    <span class="text-sm">PUTIH</span>
-                </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-pink-300 mb-2"></div>
-                    <span class="text-sm">PINK</span>
-                </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-blue-200 mb-2"></div>
-                    <span class="text-sm">BIRU MUDA</span>
-                </div>
-                <div class="color-option flex flex-col items-center">
-                    <div class="w-20 h-20 rounded-full bg-purple-500 mb-2"></div>
-                    <span class="text-sm">UNGGU</span>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.orderonline.id/uploads/images_1418571756508566138.png" alt="Detail Jahitan Jaket" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-white">
+                        <p class="text-center">Jahitan berkualitas tinggi dan tahan lama</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Color Variants -->
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-lavender-dark">Pilihan Warna</h2>
+            <div class="grid grid-cols-3 md:grid-cols-9 gap-4 justify-items-center">
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-black rounded-lg border-2 border-gray-200 cursor-pointer" title="HITAM"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-gray-500 rounded-lg border-2 border-gray-200 cursor-pointer" title="GRAY"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-green-500 rounded-lg border-2 border-gray-200 cursor-pointer" title="HIJAU"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-red-500 rounded-lg border-2 border-gray-200 cursor-pointer" title="MERAH"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-white rounded-lg border-2 border-gray-300 cursor-pointer" title="PUTIH"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-pink-400 rounded-lg border-2 border-gray-200 cursor-pointer" title="PINK"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-blue-300 rounded-lg border-2 border-gray-200 cursor-pointer" title="BIRU MUDA"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-purple-500 rounded-lg border-2 border-gray-200 cursor-pointer" title="UNGGU"></div>
+                <div class="color-swatch w-12 h-12 md:w-16 md:h-16 bg-blue-500 rounded-lg border-2 border-gray-200 cursor-pointer" title="BIRU"></div>
+            </div>
+            <p class="text-center mt-6 text-gray-600">*Klik pada warna untuk melihat detail</p>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-12 bg-gray-50" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Testimoni Pelanggan</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="testimonial-card bg-white p-6 rounded-lg">
+    <section class="py-16 px-4 md:px-8 bg-accent-soft">
+        <div class="max-w-6xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-lavender-dark">Testimoni Pelanggan</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
-                            <i data-feather="user" class="text-purple-600"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-semibold">Dian, Jakarta</h4>
-                            <div class="flex text-yellow-400">
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                            </div>
+                        <img src="http://static.photos/people/200x200/1" alt="Dina" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Dina</h4>
+                            <p class="text-gray-600">Jakarta</p>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Saya sangat puas dengan jaket ini! Nyaman dipakai dan perlindungan UV-nya terasa sekali."</p>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700">"Sangat nyaman dipakai, tidak gerah bahkan di bawah terik matahari! Desainnya juga sangat stylish."</p>
                 </div>
-                <div class="testimonial-card bg-white p-6 rounded-lg">
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
-                            <i data-feather="user" class="text-purple-600"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-semibold">Rina, Bandung</h4>
-                            <div class="flex text-yellow-400">
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                            </div>
+                        <img src="http://static.photos/people/200x200/2" alt="Rina" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rina</h4>
+                            <p class="text-gray-600">Bandung</p>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Bahan sangat ringan dan adem, cocok untuk olahraga pagi. Desainnya juga stylish!"</p>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700">"Bahan nya ringan dan adem banget. Cocok buat olahraga pagi atau sore. Udah beli kedua kalinya!"</p>
                 </div>
-                <div class="testimonial-card bg-white p-6 rounded-lg">
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
-                            <i data-feather="user" class="text-purple-600"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h4 class="font-semibold">Sari, Surabaya</h4>
-                            <div class="flex text-yellow-400">
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                            </div>
+                        <img src="http://static.photos/people/200x200/3" alt="Sari" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sari</h4>
+                            <p class="text-gray-600">Surabaya</p>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Sudah pakai 2 minggu, jaketnya masih seperti baru. Kualitasnya benar-benar premium."</p>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700">"Pengiriman cepat dan packaging rapi. Jaketnya persis seperti di gambar. Recommended banget!"</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Promo Countdown -->
-    <section class="py-8 promo-banner text-white" data-aos="fade-up">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-2">PROMO SPESIAL HARI INI</h3>
-            <p class="mb-4">Diskon 50% akan berakhir dalam:</p>
-            <div id="countdown" class="text-3xl font-bold mb-4">
-                <span id="hours">23</span>:<span id="minutes">59</span>:<span id="seconds">59</span>
+    <section class="py-12 px-4 md:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <div class="promo-badge inline-block px-6 py-2 text-white font-bold rounded-full mb-4">
+                PROMO SPESIAL
             </div>
-            <p class="text-sm">*Promo hanya berlaku hari ini</p>
+            <h3 class="text-2xl md:text-3xl font-bold mb-6 text-lavender-dark">Promo berakhir dalam:</h3>
+            <div id="countdown" class="flex justify-center space-x-2 md:space-x-4 text-2xl md:text-4xl font-mono font-bold text-gray-800">
+                <div class="bg-lavender-light rounded-lg p-3 md:p-4 shadow">
+                    <span id="days">00</span>
+                    <div class="text-sm md:text-base font-normal">Hari</div>
+                </div>
+                <div class="bg-lavender-light rounded-lg p-3 md:p-4 shadow">
+                    <span id="hours">00</span>
+                    <div class="text-sm md:text-base font-normal">Jam</div>
+                </div>
+                <div class="bg-lavender-light rounded-lg p-3 md:p-4 shadow">
+                    <span id="minutes">00</span>
+                    <div class="text-sm md:text-base font-normal">Menit</div>
+                </div>
+                <div class="bg-lavender-light rounded-lg p-3 md:p-4 shadow">
+                    <span id="seconds">00</span>
+                    <div class="text-sm md:text-base font-normal">Detik</div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Order Notes -->
-    <section class="py-8 bg-white" data-aos="fade-up">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <div class="flex items-center">
-                    <i data-feather="truck" class="text-purple-600 mr-2"></i>
-                    <span>Pengiriman 2 - 4 Hari Setelah Pemesanan</span>
-                </div>
-                <div class="flex items-center">
-                    <i data-feather="map-pin" class="text-purple-600 mr-2"></i>
-                    <span>Mohon Isi Alamat Dengan Lengkap</span>
-                </div>
-                <div class="flex items-center">
-                    <i data-feather="check" class="text-purple-600 mr-2"></i>
-                    <span>100% Product Original</span>
-                </div>
+    <section class="py-12 px-4 md:px-8 bg-accent-soft">
+        <div class="max-w-4xl mx-auto" data-aos="fade-up">
+            <div class="bg-white rounded-xl p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-4 text-lavender-dark flex items-center">
+                    <i data-feather="info" class="mr-2"></i> Informasi Penting
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                        <span>Pengiriman 2 - 4 Hari Setelah Pemesanan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                        <span>Mohon Isi Alamat Dengan Lengkap</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-green-500 mr-2 mt-1"></i>
+                        <span>100% Product Original</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Pricing -->
-    <section class="py-12 bg-gray-50" data-aos="fade-up">
-        <div class="container mx-auto px-4 text-center">
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold text-purple-700 mb-2">PROMO SPESIAL HARI INI</h3>
-                <p class="text-gray-600 mb-6">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
-                
-                <div class="mb-6">
-                    <p class="text-gray-500 line-through">HARGA NORMAL: Rp 638.000</p>
-                    <p class="text-4xl font-bold text-purple-600 my-2">HARGA PROMO: Rp 319.000</p>
-                    <p class="text-green-600 font-semibold">Anda Hemat: Rp 319.000</p>
-                </div>
-                
-                <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
-                    BELI SEKARANG
-                </button>
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <div class="promo-badge inline-block px-6 py-2 text-white font-bold rounded-full mb-2">
+                PROMO SPESIAL HARI INI
+            </div>
+            <p class="text-gray-600 mb-8">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah: <span id="promo-end-time" class="font-semibold"></span></p>
+            
+            <div class="mb-6">
+                <span class="text-2xl text-gray-500 line-through">HARGA NORMAL: Rp 638.000</span>
+            </div>
+            <div class="mb-2">
+                <span class="text-4xl md:text-5xl font-bold text-green-600">HARGA PROMO: Rp 319.000</span>
+            </div>
+            <div class="mb-8">
+                <span class="text-lg text-gray-700">Anda Hemat: Rp 319.000</span>
             </div>
         </div>
     </section>
 
-    <!-- Promo Banner -->
-    <section class="py-8" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <div class="relative rounded-lg overflow-hidden">
-                <img src="https://id-live-01.slatic.net/p/6f1e8447ea25d5a34805262f4752d352.jpg" alt="Promo Banner" class="w-full h-auto">
-                <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                    <div class="text-center text-white p-4">
-                        <h3 class="text-3xl md:text-4xl font-bold mb-2">DISKON 50% HARI INI!</h3>
-                        <p class="text-xl">Jangan lewatkan kesempatan ini</p>
-                    </div>
+    <!-- Promo Image -->
+    <section class="px-4 md:px-8 bg-accent-soft">
+        <div class="max-w-6xl mx-auto" data-aos="fade-up">
+            <div class="relative rounded-xl overflow-hidden shadow-xl">
+                <img src="https://id-live-01.slatic.net/p/6f1e8447ea25d5a34805262f4752d352.jpg" alt="Diskon 50% Hari Ini" class="w-full h-auto">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <h3 class="text-3xl md:text-5xl font-bold text-white text-center">DISKON <span class="text-yellow-300">50%</span> HARI INI!</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Order Form -->
-    <section class="py-12 form-container" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold text-center mb-6">FORM PEMESANAN</h2>
-                    <form class="space-y-4">
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="name">Nama Lengkap</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="phone">Nomor WhatsApp</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="address">Alamat Lengkap</label>
-                            <textarea id="address" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="color">Warna yang Dipilih</label>
-                            <select id="color" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                                <option value="">Pilih Warna</option>
-                                <option value="hitam">Hitam</option>
-                                <option value="gray">Gray</option>
-                                <option value="hijau">Hijau</option>
-                                <option value="merah">Merah</option>
-                                <option value="putih">Putih</option>
-                                <option value="pink">Pink</option>
-                                <option value="biru muda">Biru Muda</option>
-                                <option value="ungu">Ungu</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="size">Ukuran</label>
-                            <select id="size" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                                <option value="">Pilih Ukuran</option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2" for="quantity">Jumlah</label>
-                            <input type="number" id="quantity" min="1" value="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                        </div>
-                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
-                            PESAN SEKARANG
-                        </button>
-                    </form>
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-4xl mx-auto" data-aos="fade-up">
+            <div class="bg-lavender-light p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold text-center mb-8 text-lavender-dark">Form Pemesanan</h3>
+                <!-- OrderOnline Embed Code -->
+                <div class="ooef bg-white p-6 rounded-lg">
+                    <form class="orderonline-embed-form" data-username="elsa" data-product-slug="jaket-olahraga-anti-uv" data-product-id="68b231651af8fca836031822" id="oo-embed-form-jaket-olahraga-anti-uv-731" data-origin="orderonline"> 
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status"><div>Loading...</div></div>
+                        </div> 
+                    </form> 
                 </div>
+                <script> 
+                    if (typeof xLogError != 'function') { 
+                        var xLogError = function (error) { 
+                            var req = new XMLHttpRequest(); 
+                            var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); 
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; 
+                            req.open('POST', 'https://api.orderonline.id/log', true); 
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+                            req.send(params); 
+                        }; 
+                    } 
+                    try { 
+                        if (typeof xEmbedScript != 'function') { 
+                            var xEmbedScript = function () { 
+                                !function(w, d, e, v, id, t, s) { 
+                                    if (d.getElementById(id)) return; 
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id; 
+                                    s = d.getElementsByTagName(e)[0]; 
+                                    s.parentNode.insertBefore(t, s); 
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js'); 
+                            }; 
+                        } 
+                        if (typeof xEmbedInit != 'function') { 
+                            var xEmbedInit = function (w, n) { 
+                                if (w.ooe) return; 
+                                n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; 
+                                if (!w._ooe) w._ooe = n; 
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = []; 
+                            }; 
+                        } 
+                        xEmbedInit(window); 
+                        ooe('setup', 'redirect', 'https://elsa.orderonline.id'); 
+                        ooe('init', '5f1a584d68e4c05c6f66c677', '68b231651af8fca836031822', '68b231651af8fca836031823', 'oo-embed-form-jaket-olahraga-anti-uv-731', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); 
+                        if (!window.jQuery) { 
+                            !function(w, d, e, v, id, t, s) { 
+                                if (d.getElementById(id)) return; 
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id; 
+                                t.addEventListener('load', xEmbedScript); 
+                                s = d.getElementsByTagName(e)[0]; 
+                                s.parentNode.insertBefore(t, s); 
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); 
+                        } else { 
+                            xEmbedScript(); 
+                        } 
+                    } catch (e) { 
+                        xLogError(e); 
+                        throw e; 
+                    } 
+                </script>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <p class="mb-4">Jaket Olahraga Anti UV Premium</p>
-                <p class="text-gray-400 text-sm">© 2023 All Rights Reserved</p>
-            </div>
+    <footer class="bg-lavender-dark text-white py-8 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2025 Jaket Olahraga Anti UV. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-
-        // Initialize Feather Icons
-        feather.replace();
-
         // Countdown Timer
         function updateCountdown() {
             const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 0);
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(23, 59, 59, 999); // Set to end of tomorrow
+
+            const difference = tomorrow - now;
             
-            const diff = endOfDay - now;
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
             
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Update promo end time text
+            const promoEnd = new Date(now);
+            promoEnd.setDate(promoEnd.getDate() + 1);
+            document.getElementById('promo-end-time').textContent = promoEnd.toLocaleDateString('id-ID', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
         }
-        
+
         setInterval(updateCountdown, 1000);
         updateCountdown();
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script>
+        feather.replace();
     </script>
 </body>
 </html>
